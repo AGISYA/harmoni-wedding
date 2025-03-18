@@ -81,7 +81,7 @@ export default function WeddingVenueLanding() {
   };
 
   // Scroll to section smoothly
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId: string) => {
     setMobileMenuOpen(false);
     const element = document.getElementById(sectionId);
     if (element) {
