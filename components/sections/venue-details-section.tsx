@@ -37,7 +37,7 @@ export default function VenueDetailsSection({
   return (
     <section
       id="venue"
-      className="py-12 sm:py-16 md:py-20 lg:py-28 bg-gradient-to-b from-white to-rose-50"
+      className="py-12 sm:py-16 md:py-20 lg:py-28 bg-gradient-to-b text-black from-white to-rose-50"
     >
       <div className="container px-4 sm:px-6">
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16 space-y-2 sm:space-y-4">
@@ -117,7 +117,7 @@ function IndoorVenues() {
       name: "Grand Ballroom",
       description:
         "Ballroom utama kami adalah ruangan megah dengan luas 1.000 m² yang dapat menampung hingga 500 tamu. Dengan langit-langit tinggi 8 meter yang dihiasi chandelier kristal mewah, ruangan ini menawarkan kemewahan dan keanggunan untuk resepsi pernikahan Anda.",
-      image: "/placeholder.svg?height=600&width=800&text=Grand+Ballroom",
+      image: "/images/IMG_20240221_110848.jpg",
       features: [
         {
           icon: <Users className="h-4 w-4 sm:h-5 sm:w-5 text-rose-500" />,
@@ -142,7 +142,7 @@ function IndoorVenues() {
       name: "Crystal Hall",
       description:
         "Crystal Hall adalah ruangan yang lebih intim dengan kapasitas 200 tamu. Dinding kaca yang menghadap ke taman memberikan pemandangan alam yang indah dan pencahayaan alami. Ruangan ini ideal untuk pernikahan dengan jumlah tamu yang lebih kecil atau untuk acara pre-wedding seperti lamaran atau akad nikah.",
-      image: "/placeholder.svg?height=600&width=800&text=Crystal+Hall",
+      image: "/images/IMG_20240221_112743.jpg",
       features: [
         {
           icon: <Users className="h-4 w-4 sm:h-5 sm:w-5 text-rose-500" />,
@@ -167,7 +167,7 @@ function IndoorVenues() {
       name: "Bridal Suite",
       description:
         "Bridal Suite kami adalah ruangan mewah yang dirancang khusus untuk persiapan pengantin. Dengan luas 100 m², ruangan ini dilengkapi dengan area rias dengan pencahayaan profesional, kamar ganti, kamar mandi pribadi, dan area santai untuk keluarga dekat. Ruangan ini juga menyediakan layanan katering khusus untuk pengantin dan keluarga.",
-      image: "/placeholder.svg?height=600&width=800&text=Bridal+Suite",
+      image: "/images/SCF9146.jpg",
       features: [
         {
           icon: <Users className="h-4 w-4 sm:h-5 sm:w-5 text-rose-500" />,
@@ -255,7 +255,7 @@ function OutdoorVenues() {
       name: "Garden Pavilion",
       description:
         "Garden Pavilion kami adalah area outdoor yang dikelilingi oleh taman tropis yang indah. Dengan luas 800 m², area ini dapat menampung hingga 300 tamu. Paviliun utama dilengkapi dengan atap permanen yang elegan, sehingga acara Anda tetap berjalan lancar dalam segala cuaca. Area ini sangat populer untuk upacara pernikahan dengan latar belakang alam yang menakjubkan.",
-      image: "/placeholder.svg?height=600&width=800&text=Garden+Pavilion",
+      image: "/images/outdor.jpg",
       features: [
         {
           icon: <Users className="h-4 w-4 sm:h-5 sm:w-5 text-rose-500" />,
@@ -280,7 +280,8 @@ function OutdoorVenues() {
       name: "Lakeside Terrace",
       description:
         "Lakeside Terrace adalah area outdoor yang menghadap ke danau buatan dengan air mancur yang indah. Area ini dapat menampung hingga 150 tamu dan sangat ideal untuk cocktail reception atau acara intimate wedding. Pemandangan matahari terbenam di atas danau menciptakan latar belakang yang romantis untuk foto pernikahan Anda.",
-      image: "/placeholder.svg?height=600&width=800&text=Lakeside+Terrace",
+      image:
+        "/images/Snapinst.app_470917536_18015784175661142_1770618019330661764_n_1080.jpg",
       features: [
         {
           icon: <Users className="h-4 w-4 sm:h-5 sm:w-5 text-rose-500" />,
@@ -305,7 +306,7 @@ function OutdoorVenues() {
       name: "Rose Garden",
       description:
         "Rose Garden adalah area yang dikelilingi oleh berbagai jenis mawar yang indah. Dengan gazebo putih di tengahnya, area ini ideal untuk upacara pernikahan yang intim dengan kapasitas hingga 100 tamu. Aroma mawar yang menyegarkan dan keindahan bunga-bunga menciptakan suasana yang romantis dan mempesona.",
-      image: "/placeholder.svg?height=600&width=800&text=Rose+Garden",
+      image: "/images/1548244210.jpg",
       features: [
         {
           icon: <Users className="h-4 w-4 sm:h-5 sm:w-5 text-rose-500" />,
