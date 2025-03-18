@@ -1,6 +1,4 @@
 "use client";
-
-import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -34,12 +32,12 @@ interface VenueDetailsSectionProps {
 export default function VenueDetailsSection({
   handleWhatsAppClick,
 }: VenueDetailsSectionProps) {
-  const [activeVenueTab, setActiveVenueTab] = useState("indoor");
+  // Remove the unused state variable
 
   return (
     <section
       id="venue"
-      className="py-12 sm:py-16 md:py-20 lg:py-28 bg-gradient-to-b  from-white to-rose-50"
+      className="py-12 sm:py-16 md:py-20 lg:py-28 bg-gradient-to-b from-white to-rose-50"
     >
       <div className="container px-4 sm:px-6">
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16 space-y-2 sm:space-y-4">
@@ -59,12 +57,8 @@ export default function VenueDetailsSection({
           </p>
         </div>
 
-        <Tabs
-          defaultValue="indoor"
-          className="max-w-5xl mx-auto"
-          onValueChange={setActiveVenueTab}
-        >
-          <TabsList className="grid w-full grid-cols-3 mb-6 sm:mb-8 p-1 text-black bg-rose-100 rounded-full">
+        <Tabs defaultValue="indoor" className="max-w-5xl mx-auto">
+          <TabsList className="grid w-full grid-cols-3 mb-6 sm:mb-8 p-1 bg-rose-100 rounded-full">
             <TabsTrigger
               value="indoor"
               className="rounded-full data-[state=active]:bg-white data-[state=active]:text-rose-600 data-[state=active]:shadow-sm py-2 sm:py-3 text-xs sm:text-sm"
@@ -123,7 +117,7 @@ function IndoorVenues() {
       name: "Grand Ballroom",
       description:
         "Ballroom utama kami adalah ruangan megah dengan luas 1.000 m² yang dapat menampung hingga 500 tamu. Dengan langit-langit tinggi 8 meter yang dihiasi chandelier kristal mewah, ruangan ini menawarkan kemewahan dan keanggunan untuk resepsi pernikahan Anda.",
-      image: "/images/IMG_20240221_110848.jpg",
+      image: "/placeholder.svg?height=600&width=800&text=Grand+Ballroom",
       features: [
         {
           icon: <Users className="h-4 w-4 sm:h-5 sm:w-5 text-rose-500" />,
@@ -148,7 +142,7 @@ function IndoorVenues() {
       name: "Crystal Hall",
       description:
         "Crystal Hall adalah ruangan yang lebih intim dengan kapasitas 200 tamu. Dinding kaca yang menghadap ke taman memberikan pemandangan alam yang indah dan pencahayaan alami. Ruangan ini ideal untuk pernikahan dengan jumlah tamu yang lebih kecil atau untuk acara pre-wedding seperti lamaran atau akad nikah.",
-      image: "/images/IMG_20240221_112743.jpg",
+      image: "/placeholder.svg?height=600&width=800&text=Crystal+Hall",
       features: [
         {
           icon: <Users className="h-4 w-4 sm:h-5 sm:w-5 text-rose-500" />,
@@ -173,7 +167,7 @@ function IndoorVenues() {
       name: "Bridal Suite",
       description:
         "Bridal Suite kami adalah ruangan mewah yang dirancang khusus untuk persiapan pengantin. Dengan luas 100 m², ruangan ini dilengkapi dengan area rias dengan pencahayaan profesional, kamar ganti, kamar mandi pribadi, dan area santai untuk keluarga dekat. Ruangan ini juga menyediakan layanan katering khusus untuk pengantin dan keluarga.",
-      image: "/images/SCF9146.jpg",
+      image: "/placeholder.svg?height=600&width=800&text=Bridal+Suite",
       features: [
         {
           icon: <Users className="h-4 w-4 sm:h-5 sm:w-5 text-rose-500" />,
@@ -201,7 +195,7 @@ function IndoorVenues() {
       {venues.map((venue, index) => (
         <div
           key={index}
-          className="grid md:grid-cols-2 text-black gap-6 sm:gap-8 items-center mb-8 sm:mb-0"
+          className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center mb-8 sm:mb-0"
         >
           <div
             className={`relative ${
@@ -261,7 +255,7 @@ function OutdoorVenues() {
       name: "Garden Pavilion",
       description:
         "Garden Pavilion kami adalah area outdoor yang dikelilingi oleh taman tropis yang indah. Dengan luas 800 m², area ini dapat menampung hingga 300 tamu. Paviliun utama dilengkapi dengan atap permanen yang elegan, sehingga acara Anda tetap berjalan lancar dalam segala cuaca. Area ini sangat populer untuk upacara pernikahan dengan latar belakang alam yang menakjubkan.",
-      image: "/images/outdor.jpg",
+      image: "/placeholder.svg?height=600&width=800&text=Garden+Pavilion",
       features: [
         {
           icon: <Users className="h-4 w-4 sm:h-5 sm:w-5 text-rose-500" />,
@@ -286,8 +280,7 @@ function OutdoorVenues() {
       name: "Lakeside Terrace",
       description:
         "Lakeside Terrace adalah area outdoor yang menghadap ke danau buatan dengan air mancur yang indah. Area ini dapat menampung hingga 150 tamu dan sangat ideal untuk cocktail reception atau acara intimate wedding. Pemandangan matahari terbenam di atas danau menciptakan latar belakang yang romantis untuk foto pernikahan Anda.",
-      image:
-        "/images/Snapinst.app_470917536_18015784175661142_1770618019330661764_n_1080.jpg",
+      image: "/placeholder.svg?height=600&width=800&text=Lakeside+Terrace",
       features: [
         {
           icon: <Users className="h-4 w-4 sm:h-5 sm:w-5 text-rose-500" />,
@@ -312,7 +305,7 @@ function OutdoorVenues() {
       name: "Rose Garden",
       description:
         "Rose Garden adalah area yang dikelilingi oleh berbagai jenis mawar yang indah. Dengan gazebo putih di tengahnya, area ini ideal untuk upacara pernikahan yang intim dengan kapasitas hingga 100 tamu. Aroma mawar yang menyegarkan dan keindahan bunga-bunga menciptakan suasana yang romantis dan mempesona.",
-      image: "/images/1548244210.jpg",
+      image: "/placeholder.svg?height=600&width=800&text=Rose+Garden",
       features: [
         {
           icon: <Users className="h-4 w-4 sm:h-5 sm:w-5 text-rose-500" />,
@@ -340,7 +333,7 @@ function OutdoorVenues() {
       {venues.map((venue, index) => (
         <div
           key={index}
-          className="grid md:grid-cols-2 text-black gap-6 sm:gap-8 items-center mb-8 sm:mb-0"
+          className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center mb-8 sm:mb-0"
         >
           <div
             className={`relative ${
@@ -462,7 +455,7 @@ function AdditionalFacilities() {
 
   return (
     <>
-      <div className="grid sm:grid-cols-2 text-black lg:grid-cols-3 gap-4 sm:gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {facilities.map((facility, index) => (
           <Card
             key={index}
@@ -472,7 +465,7 @@ function AdditionalFacilities() {
               <div className="bg-rose-100 p-2 sm:p-3 rounded-full w-fit mb-2">
                 {facility.icon}
               </div>
-              <CardTitle className="text-base text-gray-800 sm:text-lg">
+              <CardTitle className="text-base sm:text-lg">
                 {facility.title}
               </CardTitle>
             </CardHeader>
@@ -485,7 +478,7 @@ function AdditionalFacilities() {
         ))}
       </div>
 
-      <div className="bg-rose-100 rounded-xl text-black sm:rounded-2xl p-4 sm:p-6 mt-6 sm:mt-8">
+      <div className="bg-rose-100 rounded-xl sm:rounded-2xl p-4 sm:p-6 mt-6 sm:mt-8">
         <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">
           Informasi Musiman
         </h3>
